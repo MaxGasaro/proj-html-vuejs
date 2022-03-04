@@ -48,10 +48,6 @@ export default {
       ],
       quickLinks: [
         {
-          text: 'Quick Links',
-          url: '#quicklinks'
-        },
-        {
           text: 'Services',
           url: '#services'
         },
@@ -65,10 +61,6 @@ export default {
         }
       ],
       resources: [
-        {
-          text: 'Resource',
-          url: '#resource'
-        },
         {
           text: 'Art Design',
           url: '#artdesign'

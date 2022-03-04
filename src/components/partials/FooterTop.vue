@@ -9,12 +9,14 @@
           </div>
           <div class="col">
               <ul>
-                  <li v-for="(link,index) in quickLinks" :key="index">{{link.text}}</li>
+                  <li class="ms_title_link">Quick Links</li>
+                  <li v-for="(link,index) in quickLinks" :key="index"><a :href="link.url">{{link.text}}</a></li>
               </ul>
           </div>
           <div class="col">
               <ul>
-                  <li v-for="(resource, index) in resources" :key="index">{{resource.text}}</li>
+                  <li class="ms_title_link">Resources</li>
+                  <li v-for="(resource, index) in resources" :key="index"><a :href="resource.url">{{resource.text}}</a></li>
               </ul>
           </div>
           <div class="col">
@@ -38,5 +40,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+ul {
+    list-style: none;
+}
 
 </style>

@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.container {
+    border-top: 1px solid lightgray;
+}
 
 </style>

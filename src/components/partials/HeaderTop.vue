@@ -4,14 +4,14 @@
           <div class="col">
               <img src="../../assets/img/white-logo-2.png" alt="logo azienda">
           </div>
-          <div class="col">
+          <div class="col text-end">
               <nav>
                   <ul>
                       <li v-for="(item, index) in itemsNav" :key="index"><a :href="item.url">{{item.text}}</a></li>
                   </ul>
               </nav>
           </div>
-          <div class="col">
+          <div class="col-1 text-end">
             <ButtonBlue message="Sign In"/>
           </div>
       </div>

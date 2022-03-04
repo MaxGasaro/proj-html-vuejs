@@ -37,4 +37,8 @@ h1 {
 p {
     color: $textP;
 }
+img {
+    max-width: 75%;
+    object-fit: contain;
+}
 </style>
