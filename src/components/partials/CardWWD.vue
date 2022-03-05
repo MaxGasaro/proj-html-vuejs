@@ -1,11 +1,11 @@
 <template>
   <div class="col g-4 ms_card my-4">
-      <img src="../../assets/img/Group-247.png">
+      <img :src="require(`../../assets/img/${card.img}`)">
       <div class="text_up text-center py-3">
-          {{textUp}}
+          {{card.title}}
       </div>
       <div class="text_down text-center py-3">
-          When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper
+          {{card.paragraph}}
       </div>
   </div>
 </template>
@@ -14,8 +14,7 @@
 export default {
     name: 'CardWWD',
     props: {
-        'textUp': String,
-        'textDown': String
+        'card': Object
     }
 }
 </script>
