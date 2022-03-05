@@ -24,6 +24,7 @@ img {
     object-fit: contain;
     object-position: center;
     width: 50%;
+    height: 50%;
     transform: translateX(50%);
 }
 .text_up {
