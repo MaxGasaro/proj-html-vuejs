@@ -23,8 +23,9 @@ export default {
 <style scoped lang="scss">
 @import '../assets/style/variables.scss';
 header {
-  height: 75vh;
+  height: 60vh;
   background-color: $backgroundPrimary;
+  padding: 2rem;
 }
 
 </style>

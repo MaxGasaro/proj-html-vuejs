@@ -93,6 +93,6 @@ export default {
 @import '../../assets/style/variables.scss';
 #pricelist {
     background-color: $backgroundPrimary;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 </style>

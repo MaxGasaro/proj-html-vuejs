@@ -1,49 +1,6 @@
 <template>
-<VueSlickCarousel v-bind="settings">
-      <!--<div class="col-3">
-        <img :src="require(`../../assets/img/${item.url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{item.textLeft}}</p>
-         <p>{{item.textRight}}</p>
-        </div>
-      </div>-->
-      <div class="col-3">
-        <img :src="require(`../../assets/img/${items[0].url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{items[0].textLeft}}</p>
-         <p>{{items[0].textRight}}</p>
-        </div>
-      </div>
-      <div class="col-3">
-        <img :src="require(`../../assets/img/${items[1].url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{items[1].textLeft}}</p>
-         <p>{{items[1].textRight}}</p>
-        </div>
-      </div>
-      <div class="col-3">
-        <img :src="require(`../../assets/img/${items[2].url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{items[2].textLeft}}</p>
-         <p>{{items[2].textRight}}</p>
-        </div>
-      </div>
-      <div class="col-3">
-        <img :src="require(`../../assets/img/${items[3].url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{items[3].textLeft}}</p>
-         <p>{{items[3].textRight}}</p>
-        </div>
-      </div>
-      <div class="col-3">
-        <img :src="require(`../../assets/img/${items[4].url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{items[4].textLeft}}</p>
-         <p>{{items[4].textRight}}</p>
-        </div>
-      </div>
-    </VueSlickCarousel>
-  <!--<section id="latest_works">
+
+  <section id="latest_works">
       <div class="container">
           <div class="row">
               <div class="ms_little_title_red col">
@@ -63,45 +20,10 @@
       <div class="container-fluid">
           <div class="row flex-nowrap ms_overflow g-5">
               <CarouselComponent
-              
-              :items="items"
+              v-for="(item, index) in items" :key="index"
+              :item="item"
               />
-            <div class="col-3 ms_card">
-                  <img src="../../assets/img/8wa60okr-1-790x576.jpg" alt="foto1">
-                  <div class="d-flex justify-content-between">
-                      <p>ciao</p>
-                      <p>mondo</p>
-                  </div>
-              </div>
-              <div class="col-3 ms_card">
-                  <img src="../../assets/img/8wa60okr-1-790x576.jpg" alt="foto1">
-                  <div class="d-flex justify-content-between">
-                      <p>ciao</p>
-                      <p>mondo</p>
-                  </div>
-              </div>
-              <div class="col-3 ms_card">
-                  <img src="../../assets/img/8wa60okr-1-790x576.jpg" alt="foto1">
-                  <div class="d-flex justify-content-between">
-                      <p>ciao</p>
-                      <p>mondo</p>
-                  </div>
-              </div>
-              <div class="col-3 ms_card">
-                  <img src="../../assets/img/8wa60okr-1-790x576.jpg" alt="foto1">
-                  <div class="d-flex justify-content-between">
-                      <p>ciao</p>
-                      <p>mondo</p>
-                  </div>
-              </div>
-              <div class="col-3 ms_card">
-                  <img src="../../assets/img/8wa60okr-1-790x576.jpg" alt="foto1">
-                  <div class="d-flex justify-content-between">
-                      <p>ciao</p>
-                      <p>mondo</p>
-                  </div>
-              </div> 
-          </div>
+            </div>
           <div class="row justify-content-center">
               <div class="col d-flex justify-content-center">
                   <div 
@@ -110,15 +32,15 @@
               </div>
           </div>
       </div>
-  </section>-->
+  </section>
 </template>
 
 <script>
-//import CarouselComponent from './CarouselComponent.vue'
+import CarouselComponent from './CarouselComponent.vue'
 export default {
     name: 'LatestWorks',
     components: {
-        //CarouselComponent
+        CarouselComponent
     },
     data() {
         return {

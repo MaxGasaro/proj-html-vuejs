@@ -6,7 +6,7 @@
         titleBolder="What"
         paragraph="When, while the lovely valley teems vapour around meand the meridian sun strikes the upper surface."
       />
-      <div class="container">
+      <div class="container py-5">
         <div class="row row-cols-3">
           <CardTestimonial 
           v-for="(testimonial, index) in testimonials"
@@ -28,9 +28,9 @@
         <div class="row align-items-center h-100">
           <div class="col d-flex flex-column justify-content-center h-100">
             <div class="fs-2 fw-bolder">We Offer Awesome Services</div>
-            <div class="">When, while lovely valley teems with vapour around meand meridian sun strikes the upper surface.</div>
+            <div class="ms_12">When, while lovely valley teems with vapour around meand meridian sun strikes the upper surface.</div>
           </div>
-          <div class="col-4 text-end bg-white p-2 ps-5 rounded-pill">
+          <div class="col-4 text-end bg-white py-1 ps-5 rounded-pill">
             <div class="row">
               <div class="col-8 text-start d-flex align-items-center">
                 <input class="border-0 fw-lighter" type="text" placeholder="Enter Your Email Address">
@@ -113,5 +113,8 @@ export default {
   transform: translateY(50%);
   border-radius: 30px;
   color: #fff;
+  .ms_12 {
+    font-size: 12px;
+  }
 }
 </style>

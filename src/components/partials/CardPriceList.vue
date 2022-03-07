@@ -1,16 +1,16 @@
 <template>
   <div id="translate" class="col">
       <div class="card text-center" :class="item.color?'card_red':''">
-          <div class="fs-2 fw-bolder ms_zindex">{{item.title}}</div>
+          <div class="fs-2 fw-bolder ms_zindex pt-3">{{item.title}}</div>
           <div class="fs-6 ms_zindex">{{item.subtitle}}</div>
-          <div class="price ms_zindex"><span>$</span>{{item.price}}</div>
-          <div class="fs-6 fw-light">{{item.period}}</div>
+          <div class="mt-4 price ms_zindex"><span>$</span>{{item.price}}</div>
+          <div class="pb-5 fs-6 fw-light">{{item.period}}</div>
           <div class="fs-6 fw-light"><span class="fw-bold">{{item.span1}}</span> {{item.text1}}</div>
-          <div class="fs-6 fw-light"><span class="fw-bold">{{item.span2}}</span> {{item.text2}}</div>
+          <div class="py-2 fs-6 fw-light"><span class="fw-bold">{{item.span2}}</span> {{item.text2}}</div>
           <div class="fs-6 fw-light"><span class="fw-bold">{{item.span3}}</span> {{item.text3}}</div>
-          <div class="fs-6 fw-light"><span class="fw-bold">{{item.span4}}</span> {{item.text4}}</div>
+          <div class="py-2 fs-6 fw-light"><span class="fw-bold">{{item.span4}}</span> {{item.text4}}</div>
           <div class="fs-6 fw-light"><span class="fw-bold">{{item.span5}}</span> {{item.text5}}</div>
-          <div><button :class="item.color?'button_white':'button'" class="rounded-pill">{{item.buttonContent}}<span class="ps-5"><i class="fa-solid fa-arrow-right-long"></i></span></button></div>
+          <div><button :class="item.color?'button_white':'button'" class="my-5 rounded-pill">{{item.buttonContent}}<span class="ps-5"><i class="fa-solid fa-arrow-right-long"></i></span></button></div>
           <div class="number">
             {{item.price}}
           </div>
@@ -43,11 +43,14 @@ export default {
             z-index: 999;
         }
         .price {
-            font-size: 5rem;
+            font-size: 4.2rem;
             font-weight: 600;
+            position: relative;
             span {
                 font-weight: 300;
                 font-size: 12px;
+                position: absolute;
+                top: 10px;
             }
         }
         .button_white {
@@ -71,7 +74,7 @@ export default {
             position: absolute;
             top: 0;
             right: 0;
-            transform: translateY(-30%);
+            transform: translateY(-28%);
             z-index: 0;
         }
     }

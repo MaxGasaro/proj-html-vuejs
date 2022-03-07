@@ -1,7 +1,7 @@
 <template>
 <div class="text-center my-4">
   <div class="ms_little_title_red text-center">{{sectionName}}</div>
-  <div class="ms_title_section text-center text-white"><span class="ms_title_bolder">{{titleBolder}}</span> {{title}}</div>
+  <div class="ms_title_section text-center text-white py-2"><span class="ms_title_bolder">{{titleBolder}}</span> {{title}}</div>
   <div class="ms_paragraph_section text-center text-white">{{paragraph}}</div>
 </div>
 </template>
