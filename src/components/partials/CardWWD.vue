@@ -1,5 +1,5 @@
 <template>
-  <div class="col g-4 ms_card my-4">
+  <div class="col px-4 ms_card my-4">
       <img :src="require(`../../assets/img/${card.img}`)">
       <div class="text_up text-center py-3">
           {{card.title}}

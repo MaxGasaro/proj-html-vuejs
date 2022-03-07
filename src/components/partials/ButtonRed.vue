@@ -20,5 +20,8 @@ button {
     color: $primaryText;
     border: none;
     font-size: 0.8rem;
+    &:hover {
+        background:  radial-gradient(circle at -18.3% 68.3%, #e7ffff 0, #bcedff 16.67%, #8dd5fb 33.33%, #53bcf2 50%, #00a3e9 66.67%, #008be1 83.33%, #0075d9 100%);
+    }
 }
 </style>

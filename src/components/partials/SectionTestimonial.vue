@@ -77,7 +77,7 @@ export default {
           },
           {
             url: 'fabio-spinelli-695744-unsplash-1024x1024.png',
-            vote: 3,
+            vote: 5,
             text: 'When, while lovely valley teems with vapor around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand.',
             name: 'Michkel Anegl',
             position: 'Marketing Management'

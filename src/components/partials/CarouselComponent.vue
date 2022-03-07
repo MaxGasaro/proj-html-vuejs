@@ -9,9 +9,9 @@
         </div>
       </div>-->
         <img :src="require(`../../assets/img/${item.url}`)">
-        <div class="d-flex justify-content-between">
-         <p>{{item.textLeft}}</p>
-         <p>{{item.textRight}}</p>
+        <div class="d-flex pt-3 justify-content-between">
+         <p class="fw-bold">{{item.textLeft}}</p>
+         <p class="fw-lighter">{{item.textRight}}</p>
         </div>
 
   </div>
@@ -47,8 +47,9 @@
 
 <style scoped lang="scss">
 img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
-    height: 100px;
+    height: 300px;
+    border-radius: 30px;
 }
 </style>

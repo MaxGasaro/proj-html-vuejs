@@ -3,17 +3,17 @@
   <section id="latest_works">
       <div class="container">
           <div class="row">
-              <div class="ms_little_title_red col">
+              <div class="ms_little_title_red col pt-5">
                   Portfolio
               </div>
           </div>
           <div class="row justify-content-between">
-              <div class="col">
-                  <span>latest</span> work
+              <div class="col fs-3 pb-4">
+                  <span class="fw-bold">latest</span> work
               </div>
               <div class="col text-end">
-                  <i class="fa-solid fa-arrow-left-long"></i>
-                  <i class="fa-solid fa-arrow-right-long"></i>
+                  <a href="#"><i class="fa-solid fa-arrow-left-long me-2"></i></a>
+                  <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
               </div>
           </div>
       </div>
@@ -80,12 +80,12 @@ export default {
 @import '../../assets/style/general.scss';
 @import '../../assets/style/variables.scss';
 #latest_works {
-    // .ms_overflow {
-    //     overflow-x: auto;
+    .ms_overflow {
+        overflow-x: auto;
         // img {
         //     object-fit: contain;
         //     width: 100%;
-        // }
+    }
     .active_check {
         width: 8px;
         height: 8px;
@@ -95,6 +95,12 @@ export default {
     }
     .active {
         background-color: red;
+    }
+    i {
+        color: $textRed;
+        border: 1px solid $textRed;
+        border-radius: 50%;
+        padding: 10px;
     }
 }
 
