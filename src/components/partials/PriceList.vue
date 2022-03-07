@@ -1,15 +1,15 @@
 <template>
   <section id="pricelist" class="pt-5 mt-3">
-      <InitSectionCenter 
+      <InitSectionCenterWhite 
       sectionName="price list"
       title="pricing"
       titleBolder="our"
-      paragraph="When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper"  
+      paragraph="When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface"  
       />
       <div class="container">
           <div class="row">
               <CardPriceList
-              v-for="(item, index) in items" :key="index"
+              v-for="(item, indice) in items" :key="indice"
               :item="item"
               />
           </div>
@@ -19,12 +19,12 @@
 
 <script>
 import CardPriceList from './CardPriceList.vue'
-import InitSectionCenter from './InitSectionCenter.vue'
+import InitSectionCenterWhite from './InitSectionCenterWhite.vue'
 export default {
     name: 'PriceList',
     components: {
         CardPriceList,
-        InitSectionCenter
+        InitSectionCenterWhite
     },
     data() {
         return {
@@ -45,6 +45,7 @@ export default {
                     span5: 'Exceptional',
                     text5: 'Design',
                     buttonContent: 'Order Now',
+                    color: false,
                 },
                 {
                     title: 'Developing',
@@ -62,6 +63,7 @@ export default {
                     span5: 'Exceptional',
                     text5: 'Design',
                     buttonContent: 'Order Now',
+                    color: true,
                 },
                 {
                     title: 'Supporting',
@@ -79,6 +81,7 @@ export default {
                     span5: 'Exceptional',
                     text5: 'Design',
                     buttonContent: 'Order Now',
+                    color: false,
                 },
             ]
         }

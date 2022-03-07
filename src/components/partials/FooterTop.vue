@@ -40,8 +40,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-ul {
-    list-style: none;
+.container {
+    padding-top: 100px;
+    ul {
+        list-style: none;
+    }
 }
 
 </style>

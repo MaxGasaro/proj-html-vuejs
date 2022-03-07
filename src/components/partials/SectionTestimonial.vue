@@ -24,14 +24,21 @@
           />
         </div>
       </div>
-      <div class="container ms_section_offer">
+      <div class="container ms_section_offer p-5">
         <div class="row align-items-center h-100">
-          <div class="col d-flex flex-column">
-            <div class="fs-4 fw-bolder">We Offer Awesome Services</div>
+          <div class="col d-flex flex-column justify-content-center h-100">
+            <div class="fs-2 fw-bolder">We Offer Awesome Services</div>
             <div class="">When, while lovely valley teems with vapour around meand meridian sun strikes the upper surface.</div>
           </div>
-          <div class="col">
-            <input type="text" placeholder="Enter Your Email Address">
+          <div class="col-4 text-end bg-white p-2 ps-5 rounded-pill">
+            <div class="row">
+              <div class="col-8 text-start d-flex align-items-center">
+                <input class="border-0 fw-lighter" type="text" placeholder="Enter Your Email Address">
+              </div>
+              <div class="col-4 text-center">
+                <ButtonBlue message="Subscribe"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -42,12 +49,14 @@
 import InitSectionCenter from './InitSectionCenter.vue'
 import CardTestimonial from './CardTestimonial.vue'
 import CardClients from './CardClients.vue'
+import ButtonBlue from './ButtonBlue.vue'
 export default {
     name: 'SectionTestimonial',
     components: {
         InitSectionCenter,
         CardTestimonial,
-        CardClients
+        CardClients,
+        ButtonBlue
     },
     data() {
       return {
@@ -100,6 +109,9 @@ export default {
 @import '../../assets/style/general.scss';
 .ms_section_offer {
   height: 150px;
-  background-color: $textRed;
+  background: radial-gradient(circle at 120.71% 50%, #ffa279 0, #ff987a 8.33%, #ff8c7c 16.67%, #ff807e 25%, #ff7281 33.33%, #fa6385 41.67%, #f25389 50%, #e8438f 58.33%, #dd3696 66.67%, #cf2d9f 75%, #bf2baa 83.33%, #ac2db4 91.67%, #9534bf 100%);
+  transform: translateY(50%);
+  border-radius: 30px;
+  color: #fff;
 }
 </style>

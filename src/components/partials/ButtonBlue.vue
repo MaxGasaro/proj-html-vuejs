@@ -1,5 +1,5 @@
 <template>
-  <button>{{message}}</button>
+  <button class="d-flex justify-content-center align-items-center">{{message}}</button>
 </template>
 
 <script>
@@ -14,10 +14,11 @@ export default {
 <style scoped lang="scss">
 @import '../../assets/style/variables.scss';
 button {
-    padding: 5px 15px;
+    padding: 10px 25px;
     border-radius: 20px;
     background: radial-gradient(circle at -18.3% 68.3%, #e7ffff 0, #bcedff 16.67%, #8dd5fb 33.33%, #53bcf2 50%, #00a3e9 66.67%, #008be1 83.33%, #0075d9 100%);
     color: $primaryText;
     border: none;
+    font-size: 0.8rem;
 }
 </style>

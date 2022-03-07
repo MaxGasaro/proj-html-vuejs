@@ -1,5 +1,49 @@
 <template>
-  <section id="latest_works">
+<VueSlickCarousel v-bind="settings">
+      <!--<div class="col-3">
+        <img :src="require(`../../assets/img/${item.url}`)">
+        <div class="d-flex justify-content-between">
+         <p>{{item.textLeft}}</p>
+         <p>{{item.textRight}}</p>
+        </div>
+      </div>-->
+      <div class="col-3">
+        <img :src="require(`../../assets/img/${items[0].url}`)">
+        <div class="d-flex justify-content-between">
+         <p>{{items[0].textLeft}}</p>
+         <p>{{items[0].textRight}}</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <img :src="require(`../../assets/img/${items[1].url}`)">
+        <div class="d-flex justify-content-between">
+         <p>{{items[1].textLeft}}</p>
+         <p>{{items[1].textRight}}</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <img :src="require(`../../assets/img/${items[2].url}`)">
+        <div class="d-flex justify-content-between">
+         <p>{{items[2].textLeft}}</p>
+         <p>{{items[2].textRight}}</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <img :src="require(`../../assets/img/${items[3].url}`)">
+        <div class="d-flex justify-content-between">
+         <p>{{items[3].textLeft}}</p>
+         <p>{{items[3].textRight}}</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <img :src="require(`../../assets/img/${items[4].url}`)">
+        <div class="d-flex justify-content-between">
+         <p>{{items[4].textLeft}}</p>
+         <p>{{items[4].textRight}}</p>
+        </div>
+      </div>
+    </VueSlickCarousel>
+  <!--<section id="latest_works">
       <div class="container">
           <div class="row">
               <div class="ms_little_title_red col">
@@ -18,7 +62,11 @@
       </div>
       <div class="container-fluid">
           <div class="row flex-nowrap ms_overflow g-5">
-              <div class="col-3 ms_card">
+              <CarouselComponent
+              
+              :items="items"
+              />
+            <div class="col-3 ms_card">
                   <img src="../../assets/img/8wa60okr-1-790x576.jpg" alt="foto1">
                   <div class="d-flex justify-content-between">
                       <p>ciao</p>
@@ -52,7 +100,7 @@
                       <p>ciao</p>
                       <p>mondo</p>
                   </div>
-              </div>
+              </div> 
           </div>
           <div class="row justify-content-center">
               <div class="col d-flex justify-content-center">
@@ -62,12 +110,47 @@
               </div>
           </div>
       </div>
-  </section>
+  </section>-->
 </template>
 
 <script>
+//import CarouselComponent from './CarouselComponent.vue'
 export default {
-    name: 'LatestWorks'
+    name: 'LatestWorks',
+    components: {
+        //CarouselComponent
+    },
+    data() {
+        return {
+            items: [
+                {
+                    url: '8wa60okr-1-790x576.jpg',
+                    textLeft: 'Basket of Flower on table',
+                    textRight: 'Branding Strategy'
+                },
+                {
+                    url: '84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg',
+                    textLeft: 'Purinky Products',
+                    textRight: 'Digital Experience'
+                },
+                {
+                    url: 'a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg',
+                    textLeft: 'Satisfy Poster',
+                    textRight: 'Branding Strategy'
+                },
+                {
+                    url: 'DRY-1-790x576.jpg',
+                    textLeft: 'Mock Up',
+                    textRight: 'Branding Strategy'
+                },
+                {
+                    url: '84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg',
+                    textLeft: 'Satisfy Poster',
+                    textRight: 'Digital Experience'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -75,13 +158,12 @@ export default {
 @import '../../assets/style/general.scss';
 @import '../../assets/style/variables.scss';
 #latest_works {
-    .ms_overflow {
-        overflow-x: auto;
-        img {
-            object-fit: contain;
-            width: 100%;
-        }
-    }
+    // .ms_overflow {
+    //     overflow-x: auto;
+        // img {
+        //     object-fit: contain;
+        //     width: 100%;
+        // }
     .active_check {
         width: 8px;
         height: 8px;
